@@ -1,0 +1,29 @@
+.bdgContainer {
+  width: auto;
+  height: 31px;
+  display: inline-flex;
+  background: rgba(6, 6, 6, 0.44);
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 43px;
+}
+.bdgContent {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.bdgContent p {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  /* identical to box height, or 100% */
+  padding: 9px 12px 8px 7px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #ffffff;
+}
+.bdgContent img {
+  padding: 5px;
+}

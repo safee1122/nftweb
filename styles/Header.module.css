@@ -1,0 +1,74 @@
+.container {
+  max-width: 1440px;
+  background: #0d0d22;
+  background-image: url("../public/Subtract.svg"), url("../public/net.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, 0 0;
+}
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.disc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 800;
+  position: relative;
+  color: #0d0d22;
+  padding: 142px 0 0 40px;
+}
+.pink {
+  text-shadow: 0px 0px 6px #ff39b0;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #ff39b0;
+  opacity: 0.9;
+  font-size: 90px;
+  line-height: 80px;
+}
+
+.green {
+  text-shadow: 0px 0px 6px #00ebff;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #00ebff;
+  opacity: 0.9;
+  font-size: 90px;
+  line-height: 80px;
+}
+.nft {
+  font-size: 158px;
+  position: relative;
+  left: 241px;
+  top: -12px;
+}
+.pics {
+  width: 500px;
+  height: 680px;
+  margin: 50px 40px 0 0;
+  background-image: url("../public/nft.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.innerDisc {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  line-height: 25px;
+}
+.lastWord {
+  color: #00ebff;
+}
+.btn {
+  padding-top: 30px;
+}
+.popular {
+  padding: 34px 40px;
+}
