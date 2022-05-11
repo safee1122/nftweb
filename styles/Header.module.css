@@ -37,7 +37,6 @@
   -webkit-text-stroke-color: #00ebff;
   opacity: 0.9;
   font-size: 90px;
-  line-height: 80px;
 }
 .nft {
   font-size: 158px;
@@ -49,9 +48,6 @@
   width: 500px;
   height: 680px;
   margin: 50px 40px 0 0;
-  background-image: url("../public/nft.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .innerDisc {
   font-family: "Circular Std";

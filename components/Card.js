@@ -1,11 +1,11 @@
 import NameBadge from "./NameBadge";
 import cardStyles from "../styles/Card.module.css";
 
-function Cards() {
+function Cards(props) {
   return (
     <div className={cardStyles.container}>
       <div>
-        <img className={cardStyles.nftImg} src="FrontManGrp.jpg"></img>
+        <img className={cardStyles.nftImg} src={props.nftPic}></img>
         <span className={cardStyles.badge}>
           <NameBadge img="idPic1.svg" id="@ArleneMcCoy" />
         </span>
