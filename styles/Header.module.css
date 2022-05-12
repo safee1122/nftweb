@@ -10,7 +10,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+.nftPic {
+  width: 580px;
+  height: 680px;
+  padding: 50px 45px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  padding-right: 13px;
+}
+.nftPic img {
+  object-fit: cover;
+}
 .disc {
   display: flex;
   flex-direction: column;
@@ -40,14 +53,8 @@
 }
 .nft {
   font-size: 158px;
-  position: relative;
-  left: 241px;
-  top: -12px;
-}
-.pics {
-  width: 500px;
-  height: 680px;
-  margin: 50px 40px 0 0;
+  align-self: flex-end;
+  margin-top: -52px;
 }
 .innerDisc {
   font-family: "Circular Std";
@@ -58,6 +65,7 @@
   letter-spacing: -0.02em;
   color: #ffffff;
   line-height: 25px;
+  margin-top: -45px;
 }
 .lastWord {
   color: #00ebff;

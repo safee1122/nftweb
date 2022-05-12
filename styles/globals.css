@@ -44,3 +44,7 @@ a {
   font-style: normal;
   src: url("../public/fonts/TurretRoad-Bold.ttf") format("ttf");
 }
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}

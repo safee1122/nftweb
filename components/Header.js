@@ -3,16 +3,15 @@ import Button from "./Button";
 import Nav from "../components/Nav";
 import Popular from "./popular";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 import React, { useRef, useState } from "react";
 
-// Import Swiper styles
-import "/home/pc1/Desktop/projects/reactProjects/NFT Website/front-end/node_modules/swiper/swiper-bundle.js";
-import "/home/pc1/Desktop/projects/reactProjects/NFT Website/front-end/node_modules/swiper/swiper-bundle.css";
-// import required modules
-import { Navigation } from "swiper";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 function Header() {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
     <div className={headerStyles.container}>
       <div className={headerStyles.headerContainer}>
@@ -41,21 +40,42 @@ function Header() {
             <Button text="Explore Marketplace" />
           </div>
         </div>
-        <div className={headerStyles.pics}>
+        <div className={headerStyles.nftPic}>
+          <div ref={nextRef}>
+            <img className={headerStyles.arrow} src="arrow-right.svg" />
+          </div>
           <Swiper
+            onInit={(swiper) => {
+              swiper.params.navigation.prevEl = prevRef.current;
+              swiper.params.navigation.nextEl = nextRef.current;
+              swiper.navigation.init();
+              swiper.navigation.update();
+            }}
             slidesPerView={1}
             spaceBetween={30}
             loop={true}
+            navigation={true}
+            modules={[Navigation]}
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src="nft.png"></img>
+              <div className={headerStyles.pics}>
+                <img src="nft.png"></img>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <img src="nft.png"></img>
+              <div className={headerStyles.pics}>
+                <img src="nft.png"></img>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={headerStyles.pics}>
+                <img src="nft.png"></img>
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>
+        <div></div>
       </div>
       <div className={headerStyles.popular}>
         <Popular />

@@ -1,7 +1,6 @@
 .gridContainerP {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 20px;
+  display: flex;
+  flex-direction: column;
   padding: 20px 0 50px 0;
 }
 .gridContainerC {
@@ -33,4 +32,13 @@
 
 .flexItem img {
   border-radius: 6px;
+}
+.flexP {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  flex-wrap: wrap;
+}
+.flexItem {
+  border-radius: 5px;
 }
