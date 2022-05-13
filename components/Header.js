@@ -1,17 +1,17 @@
 import headerStyles from "../styles/Header.module.css";
 import Button from "./Button";
 import Nav from "../components/Nav";
-import Popular from "./popular";
+import Grid from "./grid";
 // Import Swiper React components
 import React, { useRef, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 function Header() {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const prevRefH = useRef(null);
+  const nextRefH = useRef(null);
   return (
     <div className={headerStyles.container}>
       <div className={headerStyles.headerContainer}>
@@ -41,13 +41,13 @@ function Header() {
           </div>
         </div>
         <div className={headerStyles.nftPic}>
-          <div ref={nextRef}>
+          <div ref={nextRefH}>
             <img className={headerStyles.arrow} src="arrow-right.svg" />
           </div>
           <Swiper
             onInit={(swiper) => {
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
+              swiper.params.navigation.prevEl = prevRefH.current;
+              swiper.params.navigation.nextEl = nextRefH.current;
               swiper.navigation.init();
               swiper.navigation.update();
             }}
@@ -77,8 +77,8 @@ function Header() {
         </div>
         <div></div>
       </div>
-      <div className={headerStyles.popular}>
-        <Popular />
+      <div className={headerStyles.grid}>
+        <Grid />
       </div>
     </div>
   );

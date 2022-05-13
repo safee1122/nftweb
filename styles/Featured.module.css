@@ -1,0 +1,12 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 200px;
+  gap: 27px;
+  padding-top: 37px;
+}
+.flexItem {
+  width: 200px;
+  height: 150px;
+}

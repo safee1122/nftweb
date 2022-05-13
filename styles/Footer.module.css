@@ -1,0 +1,72 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: url("../public/footerbg.svg"), #0d0d22;
+  background-position: center, center;
+  background-repeat: no-repeat;
+}
+.footerContent {
+  padding-top: 124px;
+  padding-bottom: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerContent h1 {
+  font-family: "Turret Road";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 130%;
+  /* identical to box height, or 78px */
+
+  color: #4a41ee;
+}
+.footerContent p {
+  font-family: "Turret Road";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.footerButton button {
+  width: 232px;
+  height: 49px;
+  background: linear-gradient(90deg, #4341ed 0%, #7d3bee 100%);
+  border: 1px solid #7a3cee;
+  border-radius: 3px;
+  font-family: "Turret Road";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  /* identical to box height, or 250% */
+
+  /* Gray 6 */
+  margin-top: 35px;
+  color: #f2f2f2;
+}
+.footerHero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heroBg img {
+  width: 98.5vw;
+  object-fit: cover;
+}
+.connections img {
+  width: 95%;
+}
+.connections {
+  position: absolute;
+  top: -30px;
+}

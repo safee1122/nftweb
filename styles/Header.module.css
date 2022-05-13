@@ -11,12 +11,13 @@
   flex-wrap: wrap;
 }
 .nftPic {
-  width: 580px;
+  width: 640px;
   height: 680px;
   padding: 50px 45px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: -82px;
 }
 .arrow {
   padding-right: 13px;
@@ -73,6 +74,6 @@
 .btn {
   padding-top: 30px;
 }
-.popular {
+.grid {
   padding: 34px 40px;
 }

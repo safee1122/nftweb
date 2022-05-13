@@ -1,10 +1,10 @@
 import sliderHeaderStyles from "../styles/SliderHeader.module.css";
-function SliderHeader(props) {
+function SliderHeader({ sliderTitle, ref }) {
   return (
     <div className={sliderHeaderStyles.slider}>
-      <p>{props.sliderTitle}</p>
+      <p>{sliderTitle}</p>
       <div className={sliderHeaderStyles.sliderArrow}>
-        <a>
+        <a >
           <img src="arrowRight.svg"></img>
         </a>
       </div>
